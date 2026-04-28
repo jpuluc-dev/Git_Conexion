@@ -14,7 +14,7 @@ public class empleadoVista extends javax.swing.JFrame {
         cargarTabla();
     }
 
-    // 🔹 LLENAR TABLA
+    
     public void cargarTabla() {
         DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
         modelo.setRowCount(0);
@@ -28,7 +28,7 @@ public class empleadoVista extends javax.swing.JFrame {
         );
     }
 
-    // 🔹 AGREGAR
+    
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {
         controlador.agregar(
             txtNombre.getText(),
@@ -41,7 +41,7 @@ public class empleadoVista extends javax.swing.JFrame {
         cargarTabla();
     }
 
-    // 🔹 CLICK EN TABLA (reducido)
+    
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {
         int fila = jTable1.getSelectedRow();
 
